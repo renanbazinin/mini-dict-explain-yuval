@@ -25,6 +25,15 @@ npm run dev
 
 לאחר מספר דקות האתר יהיה זמין ב־`https://renanbazinin.github.io/mini-dict-explain-yuval/`.
 
+### תצוגה מקדימה בשיתוף (Facebook / WhatsApp / X)
+
+האתר משתמש ב־**PNG** (`public/og.png`, 1200×630) ל־`og:image` / `twitter:image` — פורמטים שתומכים בו בפועל. אחרי כל `npm run deploy`, כדאי לרענן מטמון אצל הפלטפורמות:
+
+- [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)
+- [X (Twitter) Card Validator](https://cards-dev.twitter.com/validator)
+
+לעדכון הגרפיקה: ערכו `public/og.svg` והריצו `npm run generate:og` (גם רץ אוטומטית לפני `npm run build`).
+
 ### בדיקת build לפני פריסה
 
 ```bash
