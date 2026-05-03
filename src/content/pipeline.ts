@@ -32,6 +32,6 @@ export const pipelineSteps: PipelineStep[] = [
   {
     title: 'Jenkins ו־Bitbucket',
     body:
-      'Jenkins מריץ Job שמבצע promote, בדיקות נוספות או פריסה לפי המדיניות שלכם. עדכון ב־Bitbucket יכול לשקף שינוי בקוד, ב־pipeline או בתיעוד — לפי איך שהארגון הגדיר את הצעד האחרון.',
+      'Jenkins מריץ Job שמעדכן את מה שמגדיר את הפריסה בפועל — למשל קובצי Helm או תג גרסה של ה־chart במאגר Git ב־Bitbucket (איזו תמונת אפליקציה, איזה ערכי values). Argo CD על OpenShift קורא מאותו מאגר: כשיש שם גרסה חדשה, אחרי Sync הוא “יודע מה למשוך” ולסנכרן לקלאסטר. Bitbucket כאן הוא מקור האמת ב־Git; Jenkins הוא שמבצע את עדכון הגרסה אוטומטית לפי הצינור שלכם.',
   },
 ]
